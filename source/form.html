@@ -18,6 +18,63 @@
         </ul>
       </nav>
     </header>
+    <main class="main-custom">
+      <h1 class="main-custom__title">Вязание на заказ</h1>
+      <p class="main-custom__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,чтобы уточнить детали.</p>
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="order-form__part">
+            <legend class="order-form__description">Тип</legend>
+            <input class="order-form__radio" type="radio" id="interior" checked>
+            <label for="interior">Аксессуар для интерьера</label>
+            <input class="order-form__radio" type="radio" id="toy">
+            <label for="toy">Детская игрушка</label>
+          </fieldset>
+          <fieldset class="order-form__part">
+            <legend class="order-form__description">Цвет</legend>
+            <input class="order-form__checkbox" type="checkbox" id="white" checked>
+            <label class="order-form__label" for="white">Белый</label>
+            <input class="order-form__checkbox" type="checkbox" id="grey" checked>
+            <label class="order-form__label" for="grey">Серый</label>
+            <input class="order-form__checkbox" type="checkbox" id="tiffany">
+            <label class="order-form__label" for="tiffany">&laquo;Тиффани&raquo;</label>
+            <input class="order-form__checkbox" type="checkbox" id="black">
+            <label class="order-form__label" for="black">Чёрный</label>
+            <input class="order-form__checkbox" type="checkbox" id="pink">
+            <label class="order-form__label" for="pink">Розовый</label>
+            <input class="order-form__checkbox" type="checkbox" id="orange">
+            <label class="order-form__label" for="orange">Оранжевый</label>
+          </fieldset>
+          <fieldset class="order-form__part">
+            <legend class="order-form__description">ФИО</legend>
+            <label class="order-form__label" for="name">Имя:</label>
+            <input class="order-form__textline" type="text" placeholder="Введите Ваше имя*" id="name" required>
+            <label class="order-form__label" for="surname">Фамилия:</label>
+            <input class="order-form__textline" type="text" placeholder="Укажите фамилию*" id="surname" required>
+            <label class="order-form__label" for="patronymic">Отчество:</label>
+            <input class="order-form__textline" type="text" placeholder="Отчество, если желаете" id="patronymic">
+          </fieldset>
+          <fieldset class="order-form__part">
+            <legend class="order-form__description">Тел</legend>
+            <label class="order-form__label visually-hidden" for="phone">Телефон</label>
+            <input class="order-form__tel" type="tel" placeholder="+7 XXX XXX XX XX*" id="phone" required>
+          </fieldset>
+          <fieldset class="order-form__part">
+            <legend class="order-form__description">E-mail</legend>
+            <label class="order-form__label visually-hidden" for="email">e-mail</label>
+            <input class="order-form__email" type="email" placeholder="Ваш Email*" id="email" required>
+          </fieldset>
+          <fieldset class="order-form__part">
+            <legend class="order-form__description">Доп</legend>
+            <label class="order-form__label visually-hidden" for="freetext">Комментарий к заказу</label>
+            <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу" id="freetext"></textarea>
+          </fieldset>
+          <p class="order-form__required-note">*Поля обязательны для заполнения</p>
+          <button class="buttton order-form__submit" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="main-footer__social social">
         <ul class="social__list">
