@@ -1,0 +1,24 @@
+.main-header__nav-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-nav__item {
+  height: 62px;
+  padding-left: 76px;
+  padding-top: 32px;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 1px solid $border-color;
+
+  &--logo {
+    height: 35px;
+    text-align: center;
+    padding: 22px 0;
+  }
+}
+
+.main-nav__logo-image {
+  display: inline;
+}

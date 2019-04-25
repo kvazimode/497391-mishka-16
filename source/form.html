@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo-link" href="index.html"><img class="main-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggler" type="button">Навигация</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--search">Поиск по сайту</li>
-          <li class="site-list__item site-list__item--cart">Корзина: пока пуста</li>
+        <button class="main-header__nav-toggler" type="button">Навигация</button>
+        <ul class="main-nav">
+          <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html"><img class="main-nav__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин Мишка">
+              </a>
+          </li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search">Поиск по сайту</li>
+          <li class="main-nav__item main-nav__item--cart">Корзина: пока пуста</li>
         </ul>
-      </nav>
     </header>
     <main class="main-custom">
       <h1 class="main-custom__title">Вязание на заказ</h1>
@@ -76,16 +77,28 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__social social">
+      <div class="main-footer__part social">
         <ul class="social__list">
-          <li class="social__item social__item--instagram">Мы в Instagram</li>
-          <li class="social__item social__item--facebook">Мы в Facebook</li>
-          <li class="social__item social__item--twitter">Мы в Twitter</li>
+          <li class="social__item">
+            <a href="#">
+              <img class="social__icon social__icon--instagram" src="img/icon-insta.svg" alt="Мы в инстаграмме" width="22" height="21">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <img class="social__icon social__icon--facebook" src="img/icon-fb.svg" alt="Мы в Facebook" width="15" height="28">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <img class="social__icon social__icon--twitter" src="img/icon-twitter.svg" alt="Мы в Twitter" width="23" height="20">
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="main-footer__part copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
   </body>

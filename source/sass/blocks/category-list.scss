@@ -1,0 +1,14 @@
+.category-list__item {
+  background-color: $emphasis-color;
+  padding: 30px;
+
+  &--toys {
+    background-color: $emphasis-color-darker;
+  }
+}
+
+.category-list__item-link {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+}
