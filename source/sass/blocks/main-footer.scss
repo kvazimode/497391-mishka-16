@@ -1,0 +1,11 @@
+.main-footer {
+  background-color: $footer-color;
+}
+
+.main-footer__part {
+  width: 260px;
+  padding: 30px 0;
+  height: 20px;
+  margin: 0 auto;
+  border-bottom: 1px solid $border-color;
+}

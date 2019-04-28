@@ -1,0 +1,15 @@
+.specifications {
+  margin-bottom: 28px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specifications__item {
+  height: 40px;
+  border-bottom: 1px solid $border-color;
+  vertical-align: middle;
+}
+
+.specifications__parameter {
+  width: 98px;
+}
