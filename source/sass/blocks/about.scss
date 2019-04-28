@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.about__list {
+  @include clear-list;
+}
+
 .abot__title {
   font-size: 25px;
   line-height: 30px;

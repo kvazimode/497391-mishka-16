@@ -1,3 +1,7 @@
+.main-catalog__list {
+  @include clear-list;
+}
+
 .main-catalog__title {
   padding: 75px 0;
 
