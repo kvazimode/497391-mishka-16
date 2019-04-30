@@ -1,0 +1,33 @@
+.contacts__wrap {
+  margin: 44px 30px; 
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__list {
+  font-size: 15px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.contacts__item {
+  vertical-align: top;
+}
+
+.contacts__type {
+  padding: 0;
+  width: 78px;
+}
+
+.contacts__e-mail {
+  color: $text-color;
+  border-bottom: 1px solid $emphasis-color;
+}
+
+.contacts__write-us {
+  margin: 39px 30px;
+}
