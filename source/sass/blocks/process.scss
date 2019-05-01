@@ -1,0 +1,41 @@
+.process {
+  margin: 30px;
+  width: 260px;
+  border: 1px solid $border-color;
+}
+
+.process__title-wrap {
+  padding-top: 29px;
+  padding-left: 33px;
+  padding-bottom: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.process__title {
+  margin: 0;
+  padding-left: 25px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.process__video {
+  position: relative;
+}
+
+.process__wrap {
+  margin: 34px;
+}
+
+.process__description {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.process__order {
+  width: 100%;
+  background-color: $bg-color;
+}
