@@ -1,3 +1,4 @@
+@import "normalize.css";
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
@@ -17,3 +18,6 @@
 @import "blocks/reviews.scss";
 @import "blocks/splitter.scss";
 @import "blocks/contacts.scss";
+@import "blocks/main-custom.scss";
+@import "blocks/order.scss";
+@import "blocks/order-form.scss";
