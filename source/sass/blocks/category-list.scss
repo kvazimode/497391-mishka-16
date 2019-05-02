@@ -1,3 +1,7 @@
+.category-list {
+  @include clear-list;
+}
+
 .category-list__item {
   background-color: $emphasis-color;
   padding: 30px;

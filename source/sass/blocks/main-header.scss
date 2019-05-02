@@ -4,21 +4,24 @@
   right: 0;
 }
 
+.main-nav__list {
+  @include clear-list;
+}
+
 .main-nav__item {
   height: 62px;
   padding-left: 76px;
   padding-top: 32px;
   text-align: left;
   font-weight: 700;
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
 
-  &--logo {
-    height: 35px;
-    text-align: center;
-    padding: 22px 0;
+  &--cart {
+    border-bottom: 1px solid $border-color;
   }
 }
 
 .main-nav__logo-image {
-  display: inline;
+  margin: 0 auto;
+  padding: 22px 0;
 }

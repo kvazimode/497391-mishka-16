@@ -1,4 +1,6 @@
+@import "normalize.css";
 @import "fonts.scss";
+@import "mixins.scss";
 @import "variables.scss";
 @import "basic.scss";
 @import "blocks/main-header.scss";
@@ -13,3 +15,10 @@
 @import "blocks/copyright.scss";
 @import "blocks/main-catalog.scss";
 @import "blocks/product-card.scss";
+@import "blocks/reviews.scss";
+@import "blocks/splitter.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-custom.scss";
+@import "blocks/order.scss";
+@import "blocks/order-form.scss";
+@import "blocks/process.scss";
