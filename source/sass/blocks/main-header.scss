@@ -1,3 +1,7 @@
+.main-header {
+  width: 320px;
+}
+
 .main-header__nav-toggler {
   position: absolute;
   top: 0;
@@ -21,7 +25,31 @@
   }
 }
 
-.main-nav__logo-image {
-  margin: 0 auto;
-  padding: 22px 0;
+.main-nav__logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin: 22px auto;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 772px;
+  }
+  
+  .main-header__nav-toggler {
+    display: none;
+  }
+
+  .main-nav__logo {
+    width: 112px;
+    height: 46px;
+    // padding: 
+    background-image: url("../img/logo-tablet.svg");
+  }
+
+
 }
