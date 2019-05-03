@@ -3,10 +3,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-content{
+  .main-content {
     width: $tablet-width;
-    margin-top: -50px;
+    margin-top: -44px;
     border-top: 1px solid $border-color;
   }
-  
+}
+
+@media (min-width: $desktop-width) {
+  .main-content {
+    width: $desktop-width;
+  }
 }
