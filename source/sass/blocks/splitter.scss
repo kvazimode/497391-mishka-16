@@ -5,3 +5,15 @@
   height: 7px;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .splitter {
+    height: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .splitter {
+    height: 24px;
+  }
+}

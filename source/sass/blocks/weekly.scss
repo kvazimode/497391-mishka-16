@@ -20,19 +20,21 @@
   text-transform: uppercase;
 }
 
+.weekly__description-wrap {
+  color: $text-color;
+}
+
 .weekly__description {
   margin: 30px 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: $text-color;
 }
 
 .weekly__specifications {
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
-  color: $text-color;
 }
 
 .weekly__price {
@@ -46,4 +48,111 @@
 
 .weekly__order-button {
   width: 256px;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly {
+    max-width: $tablet-width;
+    margin: 50px;
+  }
+
+  .weekly__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .weekly__name {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .weekly__title {
+    width: 75px;
+    margin-right: 28px;
+    text-align: center;
+    line-height: 17px;
+  }
+
+  .weekly__description-wrap {
+    width: 292px;
+    height: 411px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .weekly__description {
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .weekly__specifications {
+    margin-top: 35px;
+  }
+
+  .weekly__image {
+    order: 2;
+    margin-top: 7px;
+    margin-left: 44px;
+    width: 333px;
+    height: 404px;
+  }
+
+  .weekly__price {
+    padding: 0;
+    margin: 55px 0 34px;
+    font-size: 20px;
+  }
+
+  .weekly__order-button {
+    width: 288px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly {
+    margin-top: 110px;
+  }
+
+  .weekly__title-wrap {
+    justify-content: flex-start;
+  }
+
+  .weekly__name {
+    order: 2;
+    z-index: 5;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .weekly__title {
+    margin-right: 53px;
+    margin-left: 47px;
+  }
+
+  .weekly__description-wrap {
+    height: 470px;
+    margin-left: 175px;
+  }
+
+  .weekly__specifications {
+    margin-top: 40px;
+  }
+
+  .weekly__image {
+    width: 525px;
+    height: 636px;
+    padding: 0;
+    margin-left: 56px;
+    margin-top: -166px;
+  }
+
+  .weekly__price {
+    margin-top: 107px;
+  }
 }
