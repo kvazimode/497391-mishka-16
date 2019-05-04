@@ -1,10 +1,11 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
-  margin-right: 30px;
+  padding-right: 30px;
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
@@ -12,8 +13,16 @@
 
 .copyright__link {
   display: block;
-  width: 27px;
-  height: 34px;
+  width: 28px;
+  height: 35px;
   background-image: url("../img/htmlacademy.svg");
+  background-position: -4px 0;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
 }

@@ -1,6 +1,8 @@
 .main-footer {
   width: 320px;
   background-color: $footer-color;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer__part {
@@ -9,4 +11,40 @@
   height: 20px;
   margin: 0 auto;
   border-bottom: 1px solid $border-color;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 50px;
+    height: 43px;
+    width: 672px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__part {
+    padding: 0;
+    margin: 0;
+    width: 190px;
+    border: none;
+  }
+
+  .main-footer__logo {
+    display: block;
+    height: 35px;
+    background-image: url("../img/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: 1050px;
+  }
 }
