@@ -1,12 +1,26 @@
 .category-list {
   @include clear-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .category-list__item {
   background-color: $emphasis-color;
   padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--interior {
+    padding-top: 23px;
+    padding-right: 37px;
+    padding-bottom: 18px;
+  }
 
   &--toys {
+    padding-top: 21px;
+    padding-right: 28px;
+    padding-bottom: 22px;
     background-color: $emphasis-color-darker;
   }
 }
@@ -15,4 +29,22 @@
   font-size: 19px;
   font-weight: 700;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .category-list {
+    flex-direction: row;
+  }
+  .category-list__item {
+    flex-grow: 1;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 20px;
+    line-height: 30px;
+    
+    &--toys {
+      padding-top: 31px;
+      padding-bottom: 28px;
+    }
+  }
 }
