@@ -140,6 +140,33 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </footer>
+
+      <section class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__card">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+          <form class="modal__form" action="#" method="POST">
+            <fieldset class="modal__size-group">
+              <legend class="modal__text">Выберите размер:</legend>
+              <ul class="modal__size-list">
+                <li class="modal__size-item">
+                  <input class="modal__size visually-hidden" type="radio" id="size-s" checked>
+                  <label class="modal__size-label" for="size-s">S</label>
+                </li>
+                <li class="modal__size-item">
+                  <input class="modal__size visually-hidden" type="radio" id="size-m">
+                  <label class="modal__size-label" for="size-m">M</label>
+                </li>
+                <li class="modal__size-item">
+                  <input class="modal__size visually-hidden" type="radio" id="size-l">
+                  <label class="modal__size-label" for="size-l">L</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button modal__submit" type="submit">Добавить</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
