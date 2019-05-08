@@ -84,3 +84,27 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 316px;
+    height: 659px;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .product-card__photo {
+    width: 316px;
+    height: 462px;
+  }
+
+  .product-card__description {
+    width: 258px;
+    height: 165px;
+  }
+
+  .product-card__short-specifications {
+    padding-top: 4px;
+    padding-bottom: 10px;
+  }
+}

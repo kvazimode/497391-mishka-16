@@ -40,3 +40,11 @@
     color: $text-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-catalog__list {
+    padding: 51px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
