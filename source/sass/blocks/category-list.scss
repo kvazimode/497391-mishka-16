@@ -31,6 +31,10 @@
   color: #ffffff;
 }
 
+.category-list__item-image {
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
   .category-list {
     margin: 0 50px;
