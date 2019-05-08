@@ -16,3 +16,33 @@
   font-weight: 700;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .info {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: -190px 0;
+  }
+
+  .info__title {
+    width: 500px;
+    padding-top: 155px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 0 0;
+  }
+
+  .info__title {
+    width: 620px;
+    padding-top: 157px;
+    padding-bottom: 354px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

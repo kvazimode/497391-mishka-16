@@ -1,3 +1,7 @@
+.social {
+  margin: 0 auto;
+}
+
 .social__list {
   @include clear-list;
   display: flex;
@@ -6,5 +10,5 @@
 }
 
 .social__item {
-  margin: 0  20px;
+  margin: 0 20px;
 }

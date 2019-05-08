@@ -1,5 +1,4 @@
 body {
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -21,4 +20,21 @@ img {
 
 .visually-hidden {
   display: none;
+}
+
+.center-wrap {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .center-wrap {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .center-wrap {
+    max-width: $desktop-width;
+  }
 }

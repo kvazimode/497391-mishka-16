@@ -1,27 +1,25 @@
+.main-header {
+  width: 320px;
+}
+
 .main-header__nav-toggler {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.main-nav__list {
-  @include clear-list;
-}
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: $tablet-width;
+  }
 
-.main-nav__item {
-  height: 62px;
-  padding-left: 76px;
-  padding-top: 32px;
-  text-align: left;
-  font-weight: 700;
-  border-top: 1px solid $border-color;
-
-  &--cart {
-    border-bottom: 1px solid $border-color;
+  .main-header__nav-toggler {
+    display: none;
   }
 }
 
-.main-nav__logo-image {
-  margin: 0 auto;
-  padding: 22px 0;
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: $desktop-width;
+  }
 }
