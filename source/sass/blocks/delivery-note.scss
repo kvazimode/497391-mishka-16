@@ -3,12 +3,13 @@
 }
 
 @media (min-width: $tablet-width) {
-    .delivery-note {
-    padding-right: 50px;
-    padding-top: 20px;
-    margin: 0;
+  .delivery-note {
     display: block;
-    position: relative;
+    order: 5;
+    width: 250px;
+    margin : 0;
+    padding-top: 20px;
+    padding-right: 52px;
     font-size: 15px;
     line-height: 24px;
     text-align: right;
