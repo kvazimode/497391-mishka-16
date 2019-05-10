@@ -9,11 +9,28 @@
 @media (min-width: $tablet-width) {
   .splitter {
     height: 16px;
+
+    &--fill {
+      display: block;
+      position: relative;
+      bottom: 12px;
+      width: $tablet-width;
+      height: 25px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: round;
+      background-position: 0 0;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .splitter {
     height: 24px;
+
+    &--fill {
+      height: 35px;
+      bottom: 16px;
+      width: $desktop-width;
+    }
   }
 }

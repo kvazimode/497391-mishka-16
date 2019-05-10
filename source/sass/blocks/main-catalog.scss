@@ -12,10 +12,6 @@
   background-color: $footer-color;
 }
 
-.main-catalog__delivery-note {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .main-catalog {
     margin-top: -44px;
@@ -26,18 +22,6 @@
     margin-top: -44px;
     font-size: 43px;
     line-height: 50px;
-  }
-
-  .main-catalog__delivery-note {
-    padding-right: 50px;
-    padding-top: 20px;
-    margin: 0;
-    display: block;
-    position: relative;
-    font-size: 15px;
-    line-height: 24px;
-    text-align: right;
-    color: $text-color;
   }
 }
 

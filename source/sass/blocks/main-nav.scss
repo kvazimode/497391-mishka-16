@@ -23,7 +23,7 @@
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-size: 18px;
-    background-position: 35px 35px;
+    background-position: 32px 32px;
   }
 
   &--cart {
@@ -31,7 +31,7 @@
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-size: 22px 19px;
-    background-position: 35px 35px;
+    background-position: 31px 30px;
   }
 }
 
@@ -49,7 +49,7 @@
   .main-nav__logo {
     width: 112px;
     height: 46px;
-    margin: 22px 210px 20px 51px;
+    margin: 22px 201px 20px 51px;
     background-image: url("../img/logo-tablet.svg");
   }
 
@@ -91,12 +91,15 @@
       height: 18px;
       font-size: 0;
       border-left: 1px solid $border-color;
+      background-position: 33px 35px;
     }
 
     &--cart {
       height: 88px;
+      padding-right: 52px;
       padding-left: 83px;
       border-left: 1px solid $border-color;
+      background-position: 31px 35px;
     }
   }
 }
@@ -145,9 +148,11 @@
 
     &--cart {
       padding-left: 83px;
+      padding-right: 42px;
     }
 
     &--search {
+      padding: 37px 32px 33px;
       width: 18px;
     }
 
