@@ -35,22 +35,17 @@
   }
 }
 
-.main-nav__logo {
+.main-nav__logo img{
   display: block;
   width: 86px;
-  height: 35px;
   margin: 22px auto;
-  background-image: url("../img/logo-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__logo {
+  .main-nav__logo img {
     width: 112px;
     height: 46px;
     margin: 22px 201px 20px 51px;
-    background-image: url("../img/logo-tablet.svg");
   }
 
   .main-nav {
@@ -107,10 +102,14 @@
 @media (min-width: $desktop-width) {
   .main-nav__logo {
     width: 149px;
-    height: 72px;
     margin: auto;
-    background-image: url("../img/logo-desktop.svg");
     order: 2;
+  }
+
+  .main-nav__logo img {
+    width: 149px;
+    height: 72px;
+    margin: 0;
   }
 
   .main-nav__list {

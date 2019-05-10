@@ -21,6 +21,11 @@
   .info {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: -190px 0;
+
+    @media (min-resolution: $dpi-retina), (min-resolution: $dppx-retina) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .info__title {
@@ -36,6 +41,10 @@
   .info {
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 0 0;
+
+    @media (min-resolution: $dpi-retina), (min-resolution: $dppx-retina) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .info__title {
