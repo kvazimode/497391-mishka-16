@@ -86,30 +86,33 @@
   }
 
   .weekly__description {
+    order: -4;
     margin: 0;
     font-size: 17px;
     line-height: 30px;
   }
 
   .weekly__specifications {
+    order: -3;
     margin-top: 35px;
   }
 
   .weekly__image {
-    order: 2;
     margin-top: 7px;
     margin-left: 44px;
     width: 333px;
-    height: 404px;
+    height: 403px;
   }
 
   .weekly__price {
+    order: -2;
     padding: 0;
     margin: 55px 0 34px;
     font-size: 20px;
   }
 
   .weekly__order-button {
+    order: -1;
     width: 288px;
   }
 }
