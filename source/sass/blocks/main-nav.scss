@@ -1,3 +1,7 @@
+.main-nav {
+  margin-top: -50px;
+}
+
 .main-nav__list {
   @include clear-list;
   display: flex;
@@ -68,6 +72,7 @@
   }
 
   .main-nav {
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -75,6 +80,7 @@
 
   .main-nav__list {
     flex-direction: row;
+    display: flex;
 
     &--tools {
       order: 1;
