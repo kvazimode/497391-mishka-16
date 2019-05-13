@@ -64,4 +64,4 @@ function resizeThrottler() {
 
 window.addEventListener('resize', resizeThrottler)
 buttonMenu.addEventListener('click', buttonMenuClickHandler)
-cha
+changeButtonMenuIcon(true)
