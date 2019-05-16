@@ -33,6 +33,11 @@
   flex-direction: column;
 }
 
+.order-form__field {
+  display: flex;
+  flex-direction: column;
+}
+
 .order-form__radio:checked ~ label::after {
   position: absolute;
   margin-left: 12px;
@@ -101,12 +106,18 @@
   border-bottom: 2px solid $font-color;
 
   &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
     opacity: 0.3;
+  }
+
+  &--tel {
+    font-size: 19px;
   }
 }
 
 .order-form__textarea {
-  width: 256px;
+  flex-grow: 1;
   height: 142px;
   padding: 0;
   margin-top: 23px;
@@ -155,7 +166,7 @@
     flex-wrap: wrap;
     max-height: 305px;
     margin-bottom: -11px;
-    margin-left: 150px;
+    margin-left: 167px;
     margin-top: -42px;
   }
 
@@ -180,7 +191,7 @@
   }
 
   .order-form__field {
-    display: flex;
+    flex-direction: row;
     align-items: baseline;
   }
 
@@ -193,5 +204,28 @@
       line-height: 18px;
       padding: 17px;
     }
+
+    &--tel,
+    &--email {
+      background-color: transparent;
+      margin-left: 0;
+    }
+  }
+
+  .order-form__buttom-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__required-note {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    margin-right: 50px;
+  }
+
+  .order-form__submit {
+    width: 214px;
+    margin-left: 50px;
   }
 }
