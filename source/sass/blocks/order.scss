@@ -20,7 +20,7 @@
 
   .order__description {
     margin: 0;
-    padding: 0 52px;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
     color: $text-color;
@@ -28,5 +28,11 @@
 
   .order__form {
     margin-top: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__description {
+    margin-left: 175px;
   }
 }

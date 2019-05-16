@@ -146,7 +146,7 @@
 
 @media (min-width: $tablet-width) {
   .order-form__part {
-    padding: 50px 52px;
+    padding: 50px;
     max-height: 304px;
 
     &:nth-child(2n) {
@@ -212,7 +212,7 @@
     }
   }
 
-  .order-form__buttom-wrap {
+  .order-form__bottom-wrap {
     display: flex;
     justify-content: space-between;
   }
@@ -227,5 +227,24 @@
   .order-form__submit {
     width: 214px;
     margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__part-description {
+    margin-left: 62px;
+  }
+
+  .order-form__field-list {
+    max-height: 228px;
+    margin-left: 175px;
+
+    &--fio {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .order-form__submit {
+    margin-left: 225px;
   }
 }
