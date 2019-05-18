@@ -3,9 +3,20 @@
 }
 
 .main-header__nav-toggler {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-top: 32px;
+  margin-left: 270px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-color: $bg-color;
+  border: none;
+  font-size: 0;
+
+  &--open {
+    background-image: url("../img/icon-menu-close.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
