@@ -69,14 +69,12 @@ function resizeThrottler() {
 
 function buttonOrderClickHandler() {
   changeVisibility(modal, false, true);
-  // modal.classList.remove('visually-hidden');
   buttonOrder.removeEventListener('click', buttonOrderClickHandler);
   modalOverlay.addEventListener('click', modalOverlayClickHandler);
 }
 
 function modalOverlayClickHandler() {
   changeVisibility(modal, true, true);
-  // modal.classList.add('visually-hidden');
   modalOverlay.removeEventListener('click', modalOverlayClickHandler);
   buttonOrder.addEventListener('click', buttonOrderClickHandler);
 }
