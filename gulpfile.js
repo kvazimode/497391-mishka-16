@@ -79,6 +79,7 @@ gulp.task("server", function () {
 
 gulp.task("copy", function() {
   return gulp.src([
+    "source/css/normalize.css",
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**",
     "source/*.ico"
