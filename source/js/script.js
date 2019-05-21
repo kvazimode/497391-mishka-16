@@ -1,16 +1,21 @@
 'use strict'
 
 const buttonMenu = document.querySelector('.main-header__nav-toggler');
+const buttonOrder = document.querySelector('.weekly__order-button');
+const modal = document.querySelector('.modal');
+const modalOverlay = document.querySelector('.modal__overlay');
 const mainNavList = document.querySelectorAll('.main-nav__list');
 const classDesktopPages = 'main-nav__list--desktop-pages';
 const classButtonOpen = 'main-header__nav-toggler--open';
 let resizeTimeout = null;
 
-function changeVisibility(element, inVisible) {
+function changeVisibility(element, inVisible, modal) {
   if (inVisible) {
     element.style.display = "none";
-  } else {
+  } else if (!modal) {
     element.style.display = "flex";
+  } else {
+    element.style.display = "fixed";
   }
 }
 
@@ -62,6 +67,21 @@ function resizeThrottler() {
   }
 }
 
+function buttonOrderClickHandler() {
+  changeVisibility(modal, false, true);
+  // modal.classList.remove('visually-hidden');
+  buttonOrder.removeEventListener('click', buttonOrderClickHandler);
+  modalOverlay.addEventListener('click', modalOverlayClickHandler);
+}
+
+function modalOverlayClickHandler() {
+  changeVisibility(modal, true, true);
+  // modal.classList.add('visually-hidden');
+  modalOverlay.removeEventListener('click', modalOverlayClickHandler);
+  buttonOrder.addEventListener('click', buttonOrderClickHandler);
+}
+
 window.addEventListener('resize', resizeThrottler)
 buttonMenu.addEventListener('click', buttonMenuClickHandler)
+buttonOrder.addEventListener('click', buttonOrderClickHandler)
 changeButtonMenuIcon(true)
