@@ -2,6 +2,7 @@
 
 const buttonMenu = document.querySelector('.main-header__nav-toggler');
 const buttonOrder = document.querySelector('.weekly__order-button');
+const buttonCartList = document.querySelectorAll('.add-to-cart')
 const modal = document.querySelector('.modal');
 const modalOverlay = document.querySelector('.modal__overlay');
 const mainNavList = document.querySelectorAll('.main-nav__list');
@@ -67,19 +68,35 @@ function resizeThrottler() {
   }
 }
 
-function buttonOrderClickHandler() {
-  changeVisibility(modal, false, true);
-  buttonOrder.removeEventListener('click', buttonOrderClickHandler);
+function buttonClickHandler(evt) {
+  modal.classList.remove('visually-hidden');
+  if (evt.target === buttonOrder) {
+    buttonOrder.removeEventListener('click', buttonClickHandler);
+  } else {
+    for (let button of buttonCartList) {
+      button.removeEventListener('click', buttonClickHandler);
+    }
+  }
   modalOverlay.addEventListener('click', modalOverlayClickHandler);
 }
 
-function modalOverlayClickHandler() {
-  changeVisibility(modal, true, true);
+function modalOverlayClickHandler(evt) {
+  modal.classList.add('visually-hidden');
   modalOverlay.removeEventListener('click', modalOverlayClickHandler);
-  buttonOrder.addEventListener('click', buttonOrderClickHandler);
+  buttonOrder.addEventListener('click', buttonClickHandler);
+  for (let button of buttonCartList) {
+    button.addEventListener('click', buttonClickHandler);
+  }
 }
 
 window.addEventListener('resize', resizeThrottler)
 buttonMenu.addEventListener('click', buttonMenuClickHandler)
-buttonOrder.addEventListener('click', buttonOrderClickHandler)
+if (buttonOrder) {
+  buttonOrder.addEventListener('click', buttonClickHandler)
+}
+if (buttonCartList) {
+  for (let button of buttonCartList) {
+    button.addEventListener('click', buttonClickHandler);
+  }
+}
 changeButtonMenuIcon(true)

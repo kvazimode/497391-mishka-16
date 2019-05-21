@@ -59,7 +59,7 @@ gulp.task("html", function() {
 });
 
 gulp.task("copy-js", function() {
-  return gulp.src("source/*.js", {
+  return gulp.src("source/js/**", {
     base: "source"
   })
   .pipe(gulp.dest("build"));
