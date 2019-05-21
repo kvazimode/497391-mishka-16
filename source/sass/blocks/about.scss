@@ -5,8 +5,6 @@
 
 .about__list {
   @include clear-list;
-  margin-top: 51px;
-  height: 675px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -17,67 +15,52 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .about__item {
   line-height: 20px;
   font-size: 17px;
   font-weight: 700;
+  height: 95px;
+  margin-top: 30px;
 
-  &::before {
-    content: "";
-    position: relative;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__decoration {
+  &--eco {
+    margin-left: 9px;
   }
 
-  &--eco::before {
-    width: 32px;
-    height: 37px;
-    top: -17px;
-    left: 9px;
-    background-image: url("../img/icon-feature-flower.svg");
+  &--like {
+    margin-top: 5px;
+    margin-left: 8px;
   }
 
-  &--price::before {
-    width: 47px;
-    height: 27px;
-    top: -25px;
-    background-image: url("../img/icon-feature-money.svg");
+  &--handmade {
+    margin-top: 2px;
+    margin-left: 3px;
   }
 
-  &--like::before {
-    width: 34px;
-    height: 27px;
-    top: -20px;
-    left: 8px;
-    background-image: url("../img/icon-feature-heart.svg");
+  &--russian {
+    margin-top: 3px;
+    margin-left: -7px;
   }
 
-  &--handmade::before {
-    width: 35px;
-    height: 34px;
-    top: -17px;
-    left: 3px;
-    background-image: url("../img/icon-feature-ball.svg");
+  &--pack {
+    margin-left: 2px;
   }
+}
 
-  &--russian::before {
-    width: 55px;
-    height: 23px;
-    top: -27px;
-    left: -7px;
-    background-image: url("../img/icon-feature-rocket.svg");
-  }
+.about__icon {
+  fill: $emphasis-color;
+}
 
-  &--pack::before {
-    width: 33px;
-    height: 32px;
-    top: -20px;
-    left: 2px;
-    background-image: url("../img/icon-feature-gift.svg");
-  }
+svg path {
+  fill: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,26 +75,14 @@
   }
 
   .about__list {
-    margin-top: 68px;
-    height: 386px;
+    height: 440px;
   }
 
   .about__item {
     min-width: 340px;
     font-size: 20px;
     line-height: 22px;
-
-    &--price {
-      margin: 81px 0;
-    }
-
-    &--russian {
-      margin-top: 8px;
-    }
-
-    &--pack {
-      margin-bottom: 4px;
-    }
+    margin-top: 49px;
   }
 }
 
@@ -127,7 +98,7 @@
   }
 
   .about__list {
-    margin-top: 68px;
+    height: 470px;
     width: 690px;
   }
 }

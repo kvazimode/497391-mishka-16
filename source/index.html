@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="visually-hidden">
+      <include src="build/img/iconsprite.svg"></include>
+    </div>
     <div class="center-wrap">
       <header class="main-header">
         <button class="main-header__nav-toggler main-header__nav-toggler--open" type="button">Навигация</button>
@@ -87,12 +90,30 @@
         <section class="about">
           <h2 class="about__title">Коротко о нас:</h2>
           <ul class="about__list">
-            <li class="about__item about__item--eco">Экологически<br>чистые материалы</li>
-            <li class="about__item about__item--price">Скандинавский стиль<br>по российской цене</li>
-            <li class="about__item about__item--like">Увеличивает лайки<br>на фотографиях</li>
-            <li class="about__item about__item--handmade">Связано вручную с<br>любовью и умилением</li>
-            <li class="about__item about__item--russian">Поддержка отечественного<br>производителя</li>
-            <li class="about__item about__item--pack">Поставляется в<br>подарочной упаковке</li>
+            <li class="about__item">
+              <svg class="about__decoration about__decoration--eco" width="32" height="37"><use class="about__icon" xlink:href="#icon-feature-flower"></use></svg>
+              Экологически<br>чистые материалы
+            </li>
+            <li class="about__item">
+              <svg class="about__decoration about__decoration--price" width="47" height="27"><use class="about__icon" xlink:href="#icon-feature-money"></use></svg>
+              Скандинавский стиль<br>по российской цене
+            </li>
+            <li class="about__item">
+              <svg class="about__decoration about__decoration--like" width="34" height="27"><use class="about__icon" xlink:href="#icon-feature-heart"></use></svg>
+              Увеличивает лайки<br>на фотографиях
+            </li>
+            <li class="about__item">
+              <svg class="about__decoration about__decoration--handmade" width="35" height="34"><use class="about__icon" xlink:href="#icon-feature-ball"></use></svg>
+              Связано вручную с<br>любовью и умилением
+            </li>
+            <li class="about__item">
+              <svg class="about__decoration about__decoration--russian" width="55" height="23"><use class="about__icon" xlink:href="#icon-feature-rocket"></use></svg>
+              Поддержка отечественного<br>производителя
+            </li>
+            <li class="about__item">
+                <svg class="about__decoration about__decoration--pack" width="33" height="32"><use class="about__icon" xlink:href="#icon-feature-gift"></use></svg>
+              Поставляется в<br>подарочной упаковке
+            </li>
           </ul>
         </section>
         <section class="reviews">
