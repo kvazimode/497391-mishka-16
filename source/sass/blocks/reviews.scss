@@ -69,12 +69,13 @@
     position: relative;
     margin: 0;
     margin-bottom: 70px;
-    padding: 86px 50px
+    padding: 86px 50px;
   }
+
   .reviews__bg-image {
     display: block;
     position: absolute;
-    left: 0;
+    left: 50px;
     top: 0;
     z-index: -1;
   }
@@ -118,7 +119,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 175px;
+    padding-left: 225px;
     padding-top: 80px;
   }
 

@@ -26,6 +26,8 @@
 @media (min-width: $desktop-width) {
   .splitter {
     height: 24px;
+    width: 1050px;
+    margin: 0 auto;
 
     &--fill {
       height: 35px;
