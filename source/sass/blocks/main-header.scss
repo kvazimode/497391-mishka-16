@@ -14,16 +14,16 @@
   background-color: $bg-color;
   border: none;
   font-size: 0;
-  
+
   &--nojs {
     display: none;
   }
 
-  &--close {
+  &--closed {
     background-image: url("../img/icon-menu-open.svg");
   }
 
-  &--open {
+  &--opened {
     background-image: url("../img/icon-menu-close.svg");
   }
 }

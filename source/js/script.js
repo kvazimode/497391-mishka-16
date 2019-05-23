@@ -7,12 +7,12 @@ const modal = document.querySelector('.modal');
 const modalOverlay = document.querySelector('.modal__overlay');
 const mainNavList = document.querySelectorAll('.main-nav__list');
 const classDesktopPages = 'main-nav__list--desktop-pages';
-const classButtonOpen = 'main-header__nav-toggler--open';
-const classButtonClose = 'main-header__nav-toggler--close';
+const classButtonOpened = 'main-header__nav-toggler--opened';
+const classButtonClosed = 'main-header__nav-toggler--closed';
 let resizeTimeout = null;
 
-function changeVisibility(element, inVisible, modal) {
-  if (inVisible) {
+function changeVisibility(element, visible, modal) {
+  if (!visible) {
     element.style.display = 'none';
   } else if (!modal) {
     element.style.display = 'flex';
@@ -22,44 +22,56 @@ function changeVisibility(element, inVisible, modal) {
 }
 
 function changeButtonMenuClass(set) {
-  buttonMenu.classList.toggle(classButtonOpen, set);
+  buttonMenu.classList.toggle(classButtonClosed, set);
   if (set) {
-    return;
+    buttonMenu.classList.remove(classButtonOpened);
   } else {
-    buttonMenu.classList.toggle(classButtonClose);
+    buttonMenu.classList.toggle(classButtonOpened);
+  }
+}
+
+function openMobileOrTabletMenu(item) {
+  if (item.classList.contains(classDesktopPages)) {
+    changeVisibility(item, false);
+  } else {
+    changeVisibility(item, true);
+  }
+}
+
+function hideMobileMenu() {
+  for (let item of mainNavList) {
+    changeVisibility(item, false);
+  }
+}
+
+function toggleMobileMenu() {
+  for (let item of mainNavList) {
+    if (buttonMenu.classList.contains(classButtonClosed)) {
+      changeVisibility(item, false);
+    } else {
+      openMobileOrTabletMenu(item);
+    }
   }
 }
 
 function buttonMenuClickHandler() {
-  for (let item of mainNavList) {
-    if (buttonMenu.classList.contains(classButtonOpen)) {
-      changeVisibility(item, true);
-    } else if (!item.classList.contains(classDesktopPages)) {
-      changeVisibility(item, false);
-    }
-  }
   changeButtonMenuClass();
+  toggleMobileMenu();
 }
 
 function resizeHandler() {
-  if (window.innerWidth < 772) {
-    for (let item of mainNavList) {
-      changeVisibility(item, true);
-    }
-    changeButtonMenuIcon(false);
+  if (window.innerWidth < 770) {
+    changeButtonMenuClass(true);
+    hideMobileMenu();
     buttonMenu.addEventListener('click', buttonMenuClickHandler)
   } else if (window.innerWidth < 1151) {
     for (let item of mainNavList) {
-      if (item.classList.contains(classDesktopPages)) {
-        changeVisibility(item, true);
-      } else {
-        changeVisibility(item, false);
-      }
+      openMobileOrTabletMenu(item);
     }
     buttonMenu.removeEventListener('click', buttonMenuClickHandler)
   } else {
     for (let item of mainNavList) {
-      changeVisibility(item, false);
+      changeVisibility(item, true);
     }
   }
 }
@@ -106,4 +118,5 @@ if (buttonCartList) {
   }
 }
 buttonMenu.classList.remove('main-header__nav-toggler--nojs')
-changeButtonMenuClass(true)
+changeButtonMenuClass(true);
+toggleMobileMenu();
