@@ -54,6 +54,12 @@ function toggleMobileMenu() {
   }
 }
 
+function setMobileMenu() {
+  changeButtonMenuClass(true);
+  hideMobileMenu();
+  buttonMenu.addEventListener('click', buttonMenuClickHandler)
+}
+
 function buttonMenuClickHandler() {
   changeButtonMenuClass();
   toggleMobileMenu();
@@ -61,9 +67,7 @@ function buttonMenuClickHandler() {
 
 function resizeHandler() {
   if (window.innerWidth < 770) {
-    changeButtonMenuClass(true);
-    hideMobileMenu();
-    buttonMenu.addEventListener('click', buttonMenuClickHandler)
+    setMobileMenu();
   } else if (window.innerWidth < 1151) {
     for (let item of mainNavList) {
       openMobileOrTabletMenu(item);
@@ -101,22 +105,27 @@ function buttonClickHandler(evt) {
 function modalOverlayClickHandler(evt) {
   modal.classList.add('visually-hidden');
   modalOverlay.removeEventListener('click', modalOverlayClickHandler);
-  buttonOrder.addEventListener('click', buttonClickHandler);
+  if (buttonOrder) {
+    buttonOrder.addEventListener('click', buttonClickHandler);
+  }
   for (let button of buttonCartList) {
     button.addEventListener('click', buttonClickHandler);
   }
 }
 
+buttonMenu.classList.remove('main-header__nav-toggler--nojs')
 window.addEventListener('resize', resizeThrottler)
-buttonMenu.addEventListener('click', buttonMenuClickHandler)
+
 if (buttonOrder) {
-  buttonOrder.addEventListener('click', buttonClickHandler)
+  buttonOrder.addEventListener('click', buttonClickHandler);
 }
+
 if (buttonCartList) {
   for (let button of buttonCartList) {
     button.addEventListener('click', buttonClickHandler);
   }
 }
-buttonMenu.classList.remove('main-header__nav-toggler--nojs')
-changeButtonMenuClass(true);
-toggleMobileMenu();
+
+if (window.innerWidth < 770) {
+  setMobileMenu();
+}
