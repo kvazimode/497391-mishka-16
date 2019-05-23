@@ -8,20 +8,26 @@ const modalOverlay = document.querySelector('.modal__overlay');
 const mainNavList = document.querySelectorAll('.main-nav__list');
 const classDesktopPages = 'main-nav__list--desktop-pages';
 const classButtonOpen = 'main-header__nav-toggler--open';
+const classButtonClose = 'main-header__nav-toggler--close';
 let resizeTimeout = null;
 
 function changeVisibility(element, inVisible, modal) {
   if (inVisible) {
-    element.style.display = "none";
+    element.style.display = 'none';
   } else if (!modal) {
-    element.style.display = "flex";
+    element.style.display = 'flex';
   } else {
-    element.style.display = "fixed";
+    element.style.display = 'fixed';
   }
 }
 
-function changeButtonMenuIcon(set) {
+function changeButtonMenuClass(set) {
   buttonMenu.classList.toggle(classButtonOpen, set);
+  if (set) {
+    return;
+  } else {
+    buttonMenu.classList.toggle(classButtonClose);
+  }
 }
 
 function buttonMenuClickHandler() {
@@ -32,7 +38,7 @@ function buttonMenuClickHandler() {
       changeVisibility(item, false);
     }
   }
-  changeButtonMenuIcon();
+  changeButtonMenuClass();
 }
 
 function resizeHandler() {
@@ -99,4 +105,5 @@ if (buttonCartList) {
     button.addEventListener('click', buttonClickHandler);
   }
 }
-changeButtonMenuIcon(true)
+buttonMenu.classList.remove('main-header__nav-toggler--nojs')
+changeButtonMenuClass(true)

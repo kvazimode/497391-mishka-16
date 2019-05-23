@@ -1,18 +1,27 @@
 .main-header {
   width: 320px;
+  position: relative;
 }
 
 .main-header__nav-toggler {
-  margin-top: 32px;
-  margin-left: 270px;
+  position: absolute;
+  top: 12px;
+  right: 31px;
   padding: 0;
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-color: $bg-color;
   border: none;
   font-size: 0;
+  
+  &--nojs {
+    display: none;
+  }
+
+  &--close {
+    background-image: url("../img/icon-menu-open.svg");
+  }
 
   &--open {
     background-image: url("../img/icon-menu-close.svg");
