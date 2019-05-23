@@ -9,7 +9,7 @@
   <body>
     <div class="center-wrap">
       <header class="main-header">
-        <button class="main-header__nav-toggler" type="button">Навигация</button>
+        <button class="main-header__nav-toggler main-header__nav-toggler--nojs" type="button">Навигация</button>
         <nav class="main-nav">
           <a class="main-nav__logo" href="index.html">
             <picture>
@@ -18,18 +18,18 @@
               <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
             </picture>
           </a>
-          <ul class="main-nav__list main-nav__list--pages">
-            <a class="main-nav__item main-nav__item--page" href="catalog.html"><li>Каталог товаров</li></a>
-            <a class="main-nav__item main-nav__item--page" href="form.html"><li>Вязание на заказ</li></a>
-          </ul>
-          <ul class="main-nav__list main-nav__list--tools">
-            <a class="main-nav__item main-nav__item--search" href="#"><li>Поиск по сайту</li></a>
-            <a class="main-nav__item main-nav__item--cart" href="#"><li>Корзина: пока пуста</li></a>
-          </ul>
-          <ul class="main-nav__list main-nav__list--desktop-pages">
-            <a class="main-nav__item main-nav__item--desktop" href="#"><li>Новые поступления</li></a>
-            <a class="main-nav__item main-nav__item--desktop" href="#"><li>Распродажа</li></a>
-          </ul>
+          <div class="main-nav__list main-nav__list--pages">
+            <a class="main-nav__item main-nav__item--page" href="catalog.html"><p>Каталог товаров</p></a>
+            <a class="main-nav__item main-nav__item--page" href="form.html"><p>Вязание на заказ</p></a>
+          </div>
+          <div class="main-nav__list main-nav__list--tools">
+            <a class="main-nav__item main-nav__item--search" href="#"><p>Поиск по сайту</p></a>
+            <a class="main-nav__item main-nav__item--cart" href="#"><p>Корзина: пока пуста</p></a>
+          </div>
+          <div class="main-nav__list main-nav__list--desktop-pages">
+            <a class="main-nav__item main-nav__item--desktop" href="#"><p>Новые поступления</p></a>
+            <a class="main-nav__item main-nav__item--desktop" href="#"><p>Распродажа</p></a>
+          </div>
           <p class="delivery-note">Бесплатная доставка по России</p>
         </nav>
       </header>
