@@ -40,9 +40,14 @@
   background-color: $bg-color;
 }
 
+.process__icon {
+  fill: $emphasis-color;
+}
+
 @media (min-width: $tablet-width) {
   .process {
     margin: 50px;
+    margin-bottom: 63px;
     width: 668px;
     display: flex;
     flex-direction: column;
@@ -62,11 +67,12 @@
   }
 
   .process__title {
+    padding-left: 33px;
     font-size: 20px;
   }
 
   .process__wrap {
-    margin: 32px 42px 46px;
+    margin: 25px 42px 43px;
   }
 
   .process__description {

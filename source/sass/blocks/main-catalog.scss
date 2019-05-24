@@ -18,7 +18,8 @@
   }
 
   .main-catalog__title {
-    padding: 88px 0;
+    padding-top: 95px;
+    padding-bottom: 78px;
     margin-top: -44px;
     font-size: 43px;
     line-height: 50px;
@@ -30,5 +31,11 @@
     padding: 51px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .main-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 104px;
   }
 }

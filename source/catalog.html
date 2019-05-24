@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="visually-hidden">
+      <include src="build/img/iconsprite.svg"></include>
+    </div>
     <div class="center-wrap">
       <header class="main-header">
         <button class="main-header__nav-toggler main-header__nav-toggler--nojs" type="button">Навигация</button>
@@ -38,19 +41,22 @@
         <h2 class="main-catalog__title">Каталог товаров</h2>
         <span class="splitter--fill"></span>
         <section class="main-catalog__products">
+          <h2 class="visually-hidden">Фирменный дизайн</h2>
           <ul class="main-catalog__list">
             <li class="main-catalog__item product-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                <source media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                <img class="product-card__photo" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
-              </picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="product-card__photo" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+                </picture>
+              </a>
               <div class="product-card__description">
-                <p class="product-card__name">Зайчик-попрыгайчик</p>
+                <a class="product-card__name" href="#">Зайчик-попрыгайчик</a>
                 <p class="product-card__short-specifications">Рост 30 см, вес 200 г</p>
                 <div class="product-card__spacer"></div>
                 <div class="product-card__price-wrap">
@@ -60,17 +66,19 @@
               </div>
             </li>
             <li class="main-catalog__item product-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                <source media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                <img class="product-card__photo" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
-              </picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="product-card__photo" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+                </picture>
+              </a>
               <div class="product-card__description">
-                <p class="product-card__name">Корзинка для белья</p>
+                <a class="product-card__name" href="#">Корзинка для белья</a>
                 <p class="product-card__short-specifications">Диаметр 15 см, высота 10 см</p>
                 <div class="product-card__spacer"></div>
                 <div class="product-card__price-wrap">
@@ -80,17 +88,19 @@
               </div>
             </li>
             <li class="main-catalog__item product-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-                <source media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                <img class="product-card__photo" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
-              </picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="product-card__photo" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+                </picture>
+              </a>
               <div class="product-card__description">
-                <p class="product-card__name">Большая корзинка для игрушек</p>
+                <a class="product-card__name" href="#">Большая корзинка для игрушек</a>
                 <p class="product-card__short-specifications">Диаметр 30 см, высота 30 см</p>
                 <div class="product-card__spacer"></div>
                 <div class="product-card__price-wrap">
@@ -103,7 +113,7 @@
         </section>
         <section class="process">
           <div class="process__title-wrap">
-            <img class="process__icon" src="img/icon-video.svg" viewBox="0 0 32 22" alt="Процесс производства">
+            <svg class="process__icon" width="32" height="32"><use xlink:href="#icon-video"></use></svg>
             <h2 class="process__title">Процесс производства</h2>
           </div>
           <div class="process__video">
@@ -116,7 +126,9 @@
               <source media="(min-width: 772px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="process__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" width="260" height="150" alt="Процесс производства">
             </picture>
-            <button class="play-button" type="button"><img src="img/icon-play.svg" width="101" height="77" alt="Воспроизвести"></button>
+            <button class="play-button" type="button">
+              <img src="img/icon-play.svg" width="101" height="77" alt="Воспроизвести">
+            </button>
           </div>
           <div class="process__wrap">
             <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -130,24 +142,26 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#">
-                <img class="social__icon social__icon--instagram" src="img/icon-insta.svg" alt="Мы в инстаграмме" width="22" height="21">
+                <svg class="social__decoration social__decoration--instagram" width="22" height="21"><use class="social__icon" xlink:href="#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#">
-                <img class="social__icon social__icon--facebook" src="img/icon-fb.svg" alt="Мы в Facebook" width="15" height="28">
+                <svg class="social__decoration social__decoration--facebook" width="15" height="28"><use class="social__icon" xlink:href="#icon-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#">
-                <img class="social__icon social__icon--twitter" src="img/icon-twitter.svg" alt="Мы в Twitter" width="23" height="20">
+                <svg class="social__decoration social__decoration--twitter" width="23" height="20"><use class="social__icon" xlink:href="#icon-twitter"></use></svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__part copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
+          </a>
         </div>
       </footer>
       <section class="modal visually-hidden">

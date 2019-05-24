@@ -46,7 +46,10 @@ gulp.task('webp-make', function() {
 });
 
 gulp.task('sprite-make', function () {
-  return gulp.src('source/img/icon-*.svg')
+  return gulp.src([
+    'source/img/icon-*.svg',
+    'source/img/logo-htmlacademy.svg'
+  ])
   .pipe(svgstore({ inlineSvg: true }))
   .pipe(rename('iconsprite.svg'))
   .pipe(gulp.dest('build/img'));

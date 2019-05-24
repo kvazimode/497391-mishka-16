@@ -168,10 +168,15 @@
     margin-bottom: -11px;
     margin-left: 167px;
     margin-top: -42px;
+
+    &--color {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   .order-form__radio:checked ~ label::after {
-    margin-left: 17px;
+    margin-left: 15px;
     width: 22px;
     height: 22px;
   }
@@ -185,12 +190,22 @@
 
     &--radio::before,
     &--checkbox::before {
-      width: 53px;
-      height: 53px;
+      margin-right: 25px;
+    }
+
+    &--radio::before {
+      width: 48px;
+      height: 48px;
+    }
+
+    &--checkbox::before {
+      width: 50px;
+      height: 48px;
     }
   }
 
   .order-form__field {
+    min-width: 235px;
     flex-direction: row;
     align-items: baseline;
   }
@@ -213,6 +228,7 @@
   }
 
   .order-form__bottom-wrap {
+    margin-top: 14px;
     display: flex;
     justify-content: space-between;
   }
@@ -222,6 +238,8 @@
     font-size: 17px;
     line-height: 30px;
     margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .order-form__submit {
@@ -236,15 +254,20 @@
   }
 
   .order-form__field-list {
-    max-height: 228px;
+    max-height: 220px;
     margin-left: 175px;
+    width: 700px;
+
+    &--color {
+      width: 760px;
+    }
 
     &--fio {
       flex-wrap: nowrap;
     }
   }
 
-  .order-form__submit {
-    margin-left: 225px;
+  .order-form__bottom-wrap {
+    margin: 10px 175px 0;
   }
 }

@@ -2,11 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Каталог товаров</title>
+    <title>Вязание на заказ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="visually-hidden">
+      <include src="build/img/iconsprite.svg"></include>
+    </div>
     <div class="center-wrap">
       <header class="main-header">
         <button class="main-header__nav-toggler main-header__nav-toggler--nojs" type="button">Навигация</button>
@@ -37,12 +40,12 @@
         <h1 class="main-custom__title">Вязание на заказ</h1>
         <span class="splitter--fill"></span>
         <section class="order">
-          <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,чтобы уточнить детали.</p>
+          <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <h2 class="visually-hidden">Форма заказа</h2>
           <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="order-form__part">
               <div class="order-form__description-wrap">
-                <legend class="order-form__part-description">Тип</legend>
+                <div class="order-form__part-description">Тип</div>
                 <div class="order-form__description-decoration"></div>
               </div>
               <ul class="order-form__field-list">
@@ -58,10 +61,10 @@
             </fieldset>
             <fieldset class="order-form__part">
               <div class="order-form__description-wrap">
-                <legend class="order-form__part-description">Цвет</legend>
+                <div class="order-form__part-description">Цвет</div>
                 <div class="order-form__description-decoration"></div>
               </div>
-              <ul class="order-form__field-list">
+              <ul class="order-form__field-list order-form__field-list--color">
                 <li class="order-form__field">
                   <input class="order-form__checkbox visually-hidden" type="checkbox" id="white" checked>
                   <label class="order-form__label order-form__label--checkbox" for="white">Белый</label>
@@ -90,7 +93,7 @@
             </fieldset>
             <fieldset class="order-form__part">
               <div class="order-form__description-wrap">
-                <legend class="order-form__part-description">ФИО</legend>
+                <div class="order-form__part-description">ФИО</div>
                 <div class="order-form__description-decoration"></div>
               </div>
               <ul class="order-form__field-list order-form__field-list--fio">
@@ -110,7 +113,7 @@
             </fieldset>
             <fieldset class="order-form__part">
               <div class="order-form__description-wrap">
-                <legend class="order-form__part-description">Тел</legend>
+                <div class="order-form__part-description">Тел</div>
                 <div class="order-form__description-decoration"></div>
               </div>
               <ul class="order-form__field-list">
@@ -120,7 +123,7 @@
                 </li>
               </ul>
               <div class="order-form__description-wrap">
-                <legend class="order-form__part-description">E-mail</legend>
+                <div class="order-form__part-description">E-mail</div>
                 <div class="order-form__description-decoration"></div>
               </div>
               <ul class="order-form__field-list">
@@ -132,7 +135,7 @@
             </fieldset>
             <fieldset class="order-form__part">
               <div class="order-form__description-wrap">
-                <legend class="order-form__part-description">Доп</legend>
+                <div class="order-form__part-description">Доп</div>
                 <div class="order-form__description-decoration"></div>
               </div>
               <ul class="order-form__field-list">
@@ -155,24 +158,26 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#">
-                <img class="social__icon social__icon--instagram" src="img/icon-insta.svg" alt="Мы в инстаграмме" width="22" height="21">
+                <svg class="social__decoration social__decoration--instagram" width="22" height="21"><use class="social__icon" xlink:href="#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#">
-                <img class="social__icon social__icon--facebook" src="img/icon-fb.svg" alt="Мы в Facebook" width="15" height="28">
+                <svg class="social__decoration social__decoration--facebook" width="15" height="28"><use class="social__icon" xlink:href="#icon-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#">
-                <img class="social__icon social__icon--twitter" src="img/icon-twitter.svg" alt="Мы в Twitter" width="23" height="20">
+                <svg class="social__decoration social__decoration--twitter" width="23" height="20"><use class="social__icon" xlink:href="#icon-twitter"></use></svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__part copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
+          </a>
         </div>
       </footer>
     </div>

@@ -15,10 +15,10 @@
   display: block;
   width: 28px;
   height: 35px;
-  background-image: url("../img/htmlacademy.svg");
-  background-position: -4px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.copyright__logo {
+  fill: $emphasis-color;
 }
 
 @media (min-width: $tablet-width) {
