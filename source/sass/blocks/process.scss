@@ -46,8 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .process {
-    margin: 50px;
-    margin-bottom: 63px;
+    margin: -3px 50px 65px;
     width: 668px;
     display: flex;
     flex-direction: column;
@@ -63,7 +62,7 @@
   }
 
   .process__title-wrap {
-    padding: 39px 42px 0;
+    padding: 35px 42px 0;
   }
 
   .process__title {
@@ -72,7 +71,7 @@
   }
 
   .process__wrap {
-    margin: 25px 42px 43px;
+    margin: 27px 41px 43px;
   }
 
   .process__description {

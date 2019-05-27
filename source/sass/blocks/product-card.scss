@@ -50,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .product-card {
-    margin: 50px;
+    margin: 55px 51px;
     width: 669px;
     height: 334px;
     display: flex;
@@ -63,13 +63,15 @@
   }
 
   .product-card__description {
-    width: 277px;
+    padding: 26px 26px 0;
+    width: 285px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .product-card__name {
+    max-width: 240px;
     font-size: 20px;
   }
 
@@ -79,6 +81,10 @@
 
   .product-card__price {
     font-size: 17px;
+  }
+
+  .product-card__price-wrap {
+    padding: 23px 5px 25px;
   }
 
   .product-card__spacer {

@@ -68,7 +68,7 @@
   .main-nav__logo img {
     width: 112px;
     height: 46px;
-    margin: 22px 201px 20px 51px;
+    margin: 22px 180px 20px 49px;
   }
 
   .main-nav {
@@ -87,7 +87,7 @@
     }
 
     &--pages {
-      padding: 20px 0 0 15px;
+      padding: 18px 0 0 12px;
       order: 2;
       font-size: 15px;
     }
@@ -116,8 +116,13 @@
     }
 
     &--cart {
-      padding-right: 52px;
+      width: 265px;
+      padding-right: 50px;
       border-left: 1px solid $border-color;
+
+      &::before {
+        padding-right: 32px;
+      }
     }
   }
 }
