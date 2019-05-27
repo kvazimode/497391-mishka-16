@@ -42,14 +42,11 @@
 
   .category-list__item {
     flex-grow: 1;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 27px 35px 32px;
+  }
+
+  .category-list__item-link {
     font-size: 20px;
     line-height: 30px;
-
-    &--toys {
-      padding-top: 31px;
-      padding-bottom: 28px;
-    }
   }
 }

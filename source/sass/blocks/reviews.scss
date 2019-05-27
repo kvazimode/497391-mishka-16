@@ -71,7 +71,7 @@
     position: relative;
     margin: 0;
     margin-bottom: 70px;
-    padding: 86px 50px;
+    padding: 77px 50px;
   }
 
   .reviews__bg-image {
@@ -84,6 +84,7 @@
 
   .reviews__title {
     margin: 0;
+    margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -112,9 +113,9 @@
   }
 
   .reviews__feedback-button {
-    width: 175px;
+    width: 171px;
     position: absolute;
-    top: 86px;
+    top: 79px;
     right: 50px;
   }
 }

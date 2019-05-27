@@ -55,7 +55,7 @@
 @media (min-width: $tablet-width) {
   .weekly {
     max-width: $tablet-width;
-    margin: 50px;
+    margin: 20px 47px 49px;
   }
 
   .weekly__title-wrap {
@@ -72,6 +72,7 @@
 
   .weekly__title {
     width: 75px;
+    margin-top: 8px;
     margin-right: 28px;
     text-align: center;
     line-height: 17px;
@@ -96,7 +97,7 @@
 
   .weekly__specifications {
     order: -3;
-    margin-top: 35px;
+    margin: 0;
   }
 
   .weekly__image {
@@ -109,7 +110,7 @@
   .weekly__price {
     order: -2;
     padding: 0;
-    margin: 55px 0 34px;
+    margin-top: 20px;
     font-size: 20px;
   }
 
