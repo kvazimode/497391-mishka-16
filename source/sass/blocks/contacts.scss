@@ -1,20 +1,23 @@
 .contacts__wrap {
-  margin: 44px 30px;
+  margin: 34px 28px;
 }
 
 .contacts__title {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .contacts__list {
+  margin-top: 26px;
   font-size: 15px;
   line-height: 30px;
   color: $text-color;
 }
 
 .contacts__item {
+  height: 57px;
   vertical-align: top;
 }
 
@@ -40,7 +43,7 @@
 }
 
 .contacts__write-us {
-  margin: 39px 30px;
+  margin: 31px 30px 40px;
 }
 
 @media (min-width: $tablet-width) {

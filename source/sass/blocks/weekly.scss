@@ -1,11 +1,11 @@
 .weekly {
   max-width: 260px;
-  margin: 34px 30px 36px;
+  margin: 27px 30px 36px;
   padding: 0;
 }
 
 .weekly__name {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -25,13 +25,15 @@
 }
 
 .weekly__description {
-  margin: 30px 0;
+  margin-top: 23px;
+  margin-bottom: 15px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .weekly__specifications {
+  margin-bottom: 29px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
@@ -39,7 +41,7 @@
 
 .weekly__price {
   margin: 0;
-  padding: 29px 0;
+  padding: 25px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

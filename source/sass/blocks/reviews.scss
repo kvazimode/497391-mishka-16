@@ -1,8 +1,9 @@
 .reviews {
-  margin: 30px 30px 45px;
+  margin: 58px 30px 45px;
 }
 
 .reviews__title {
+  margin: 0;
   font-size: 25px;
   line-height: 20px;
   font-weight: 700;
@@ -13,6 +14,7 @@
 }
 
 .reviews__text {
+  margin: 27px 0;
   font-size: 15px;
   line-height: 30px;
   color: $text-color;
@@ -34,7 +36,7 @@
 
 .reviews__skip-buttons {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   height: 52px;
   background-color: $border-color;
 }

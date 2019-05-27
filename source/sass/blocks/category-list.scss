@@ -12,21 +12,20 @@
   align-items: center;
 
   &--interior {
-    padding-top: 23px;
-    padding-right: 37px;
-    padding-bottom: 18px;
+    padding-top: 26px;
   }
 
   &--toys {
-    padding-top: 21px;
-    padding-right: 28px;
-    padding-bottom: 22px;
+    padding-top: 24px;
     background-color: $emphasis-color-darker;
   }
 }
 
 .category-list__item-link {
+  margin: 0;
+  width: 110px;
   font-size: 19px;
+  line-height: 24px;
   font-weight: 700;
   color: #ffffff;
 }
