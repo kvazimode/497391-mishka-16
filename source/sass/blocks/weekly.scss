@@ -122,7 +122,8 @@
 
 @media (min-width: $desktop-width) {
   .weekly {
-    margin-top: 110px;
+    margin-top: 89px;
+    margin-bottom: 69px;
   }
 
   .weekly__title-wrap {
@@ -142,23 +143,28 @@
   }
 
   .weekly__description-wrap {
-    height: 470px;
-    margin-left: 175px;
+    height: 478px;
+    margin-left: 178px;
+    margin-top: 48px;
+  }
+
+  .weekly__description {
+    margin-bottom: 18px;
   }
 
   .weekly__specifications {
-    margin-top: 40px;
+    margin-bottom: 74px;
   }
 
   .weekly__image {
     width: 525px;
     height: 636px;
     padding: 0;
-    margin-left: 56px;
-    margin-top: -166px;
+    margin-left: 58px;
+    margin-top: -158px;
   }
 
   .weekly__price {
-    margin-top: 107px;
+    margin-top: 0;
   }
 }

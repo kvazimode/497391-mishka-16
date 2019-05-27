@@ -90,7 +90,7 @@ svg path {
 @media (min-width: $desktop-width) {
   .about {
     max-width: $desktop-width;
-    margin: 70px 50px 90px 175px;
+    margin: 63px 50px 90px 225px;
   }
 
   .about__title {
@@ -99,7 +99,12 @@ svg path {
   }
 
   .about__list {
-    height: 470px;
+    height: 455px;
     width: 690px;
+  }
+
+  .about__item {
+    min-width: 350px;
+    margin-top: 50px;
   }
 }

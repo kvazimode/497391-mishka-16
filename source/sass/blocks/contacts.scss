@@ -120,10 +120,10 @@
 
   .contacts__wrap {
     width: 335px;
-    margin-top: 71px;
-    margin-bottom: 77px;
+    margin-top: 73px;
+    margin-bottom: 129px;
     margin-right: 0;
-    margin-left: 176px;
+    margin-left: 171px;
   }
 
   .contacts__list {
@@ -136,6 +136,7 @@
   }
 
   .contacts__item {
+    height: 40px;
     margin-top: 20px;
   }
 
@@ -145,8 +146,8 @@
     line-height: 57px;
 
     &::after {
-      top: -5px;
-      left: -105px;
+      top: -8px;
+      left: -108px;
     }
   }
 
