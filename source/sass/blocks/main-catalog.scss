@@ -28,7 +28,7 @@
 
 @media (min-width: $desktop-width) {
   .main-catalog__list {
-    padding: 51px;
+    padding: 95px 51px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -36,6 +36,7 @@
   .main-catalog__title {
     font-size: 53px;
     line-height: 57px;
-    padding-bottom: 104px;
+    padding-top: 95px;
+    padding-bottom: 102px;
   }
 }

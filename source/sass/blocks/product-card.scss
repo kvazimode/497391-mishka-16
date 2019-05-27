@@ -106,12 +106,17 @@
   }
 
   .product-card__description {
-    width: 258px;
+    padding-top: 24px;
+    width: 262px;
     height: 165px;
   }
 
   .product-card__short-specifications {
     padding-top: 4px;
     padding-bottom: 10px;
+  }
+
+  .product-card__price-wrap {
+    padding: 26px 4px 22px 0;
   }
 }
