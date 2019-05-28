@@ -40,6 +40,7 @@
 .order-form__field {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .order-form__radio:checked ~ label::after {
@@ -127,6 +128,12 @@
   &--email {
     height: 38px;
   }
+}
+
+.order-form__icon {
+  position: absolute;
+  right: 9px;
+  opacity: 0.3;
 }
 
 .order-form__textarea {
@@ -294,6 +301,11 @@
     width: 230px;
     margin-left: 50px;
   }
+
+  .order-form__icon {
+    top: 18px;
+    right: 23px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -343,5 +355,9 @@
 
   .order-form__textarea {
     margin-top: 8px;
+  }
+
+  .order-form__icon {
+    right: 6px;
   }
 }
