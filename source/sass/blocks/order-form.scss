@@ -156,20 +156,35 @@
 
 @media (min-width: $tablet-width) {
   .order-form__part {
-    padding: 50px;
+    padding: 75px 50px 49px;
     max-height: 304px;
 
     &:nth-child(2n) {
       background-color: $footer-color;
     }
+
+    &--color {
+      padding-top: 66px;
+      padding-bottom: 53px;
+    }
+
+    &--fio {
+      padding-top: 66px;
+      padding-bottom: 39px;
+    }
+
+    &--contacts {
+      padding-top: 67px;
+      padding-bottom: 43px;
+    }
+
+    &--comment {
+      padding-top: 66px;
+    }
   }
 
   .order-form__description-decoration {
     display: none;
-  }
-
-  .order-form__description-wrap {
-    margin-top: 17px;
   }
 
   .order-form__field-list {
@@ -182,6 +197,10 @@
     &--color {
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    &--fio {
+      margin-top: -34px;
     }
   }
 
@@ -223,6 +242,7 @@
   .order-form__textline {
     margin-left: 26px;
     flex-grow: 1;
+    height: 50px;
 
     &::placeholder {
       font-size: 19px;
@@ -235,10 +255,19 @@
       background-color: transparent;
       margin-left: 0;
     }
+
+    &--tel {
+      height: 60px;
+      margin-bottom: 54px;
+    }
+  }
+
+  .order-form__textarea {
+    margin-top: 10px;
   }
 
   .order-form__bottom-wrap {
-    margin-top: 14px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -253,7 +282,7 @@
   }
 
   .order-form__submit {
-    width: 214px;
+    width: 230px;
     margin-left: 50px;
   }
 }
