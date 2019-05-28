@@ -44,6 +44,10 @@
   fill: $emphasis-color;
 }
 
+.process__image {
+  background-color: $footer-color;
+}
+
 @media (min-width: $tablet-width) {
   .process {
     margin: -3px 50px 65px;

@@ -48,6 +48,10 @@
   opacity: 0.2;
 }
 
+.product-card__photo {
+  background-color: $footer-color;
+}
+
 @media (min-width: $tablet-width) {
   .product-card {
     margin: 55px 51px;

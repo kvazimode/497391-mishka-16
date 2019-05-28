@@ -52,6 +52,10 @@
   width: 256px;
 }
 
+.weekly__image {
+  background-color: $footer-color;
+}
+
 @media (min-width: $tablet-width) {
   .weekly {
     max-width: $tablet-width;
