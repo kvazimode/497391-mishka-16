@@ -18,6 +18,11 @@ img {
   display: block;
 }
 
+// с классовыми селекторами не всегда работает
+symbol path {
+  fill: inherit;
+}
+
 .visually-hidden {
   display: none;
 }

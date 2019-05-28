@@ -108,11 +108,14 @@
   margin-bottom: 22px;
   border: none;
   border-bottom: 2px solid $font-color;
+  background-color: inherit;
 
   &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
+    color: $text-color;
     opacity: 0.3;
+    font-size: 19px;
+    line-height: 47px;
+    margin: 17px;
   }
 
   &--tel {
@@ -133,10 +136,13 @@
   margin-top: 6px;
   border: 2px solid $text-color;
   resize: none;
+  background-color: inherit;
 
   &::placeholder {
     margin: 0;
     padding: 14px;
+    color: $text-color;
+    opacity: 0.3;
   }
 }
 
@@ -245,9 +251,7 @@
     height: 50px;
 
     &::placeholder {
-      font-size: 19px;
-      line-height: 18px;
-      padding: 17px;
+      padding-left: 18px;
     }
 
     &--tel,
@@ -264,6 +268,11 @@
 
   .order-form__textarea {
     margin-top: 10px;
+    background-color: inherit;
+
+    &::placeholder {
+      line-height: 24px;
+    }
   }
 
   .order-form__bottom-wrap {
