@@ -288,6 +288,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order-form__part {
+    padding-bottom: 48px;
+
+    &--color {
+      padding-top: 67px;
+      padding-bottom: 50px;
+    }
+
+    &--fio {
+      padding-top: 68px;
+      padding-bottom: 45px;
+    }
+
+    &--contacts {
+      padding-bottom: 43px;
+    }
+
+    &--comment {
+      padding-top: 68px;
+    }
+  }
+
   .order-form__part-description {
     margin-left: 62px;
   }
@@ -307,6 +329,10 @@
   }
 
   .order-form__bottom-wrap {
-    margin: 10px 175px 0;
+    margin: 12px 175px 0;
+  }
+
+  .order-form__textarea {
+    margin-top: 8px;
   }
 }
